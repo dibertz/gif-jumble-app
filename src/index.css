@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body{
+  --tw-bg-opacity: 1;
+  background: linear-gradient(
+    200deg, rgb(65 42 100) 0%, rgb(19, 10, 42) 20%, rgb(42, 91, 170) 100%);
+}
+
+#content{
+  display: flex;
+  flex-wrap: wrap;
+  @apply justify-center py-5;
+}
+
+#card{
+  @apply p-6;
+}
+
+input{
+  @apply bg-gray-100 px-1 text-slate-500 rounded;
+}
+
+img {
+  @apply rounded;
+}
+
+h2{
+  @apply font-bold text-4xl uppercase;
+}
+
+h3{
+  @apply underline underline-offset-4 decoration-indigo-700 font-bold text-2xl my-4 uppercase;
+}
+
+hr{
+  @apply bg-indigo-700 border-none h-1 my-5 overflow-hidden;
+
+}
+
+p{
+  @apply py-10;
 }
