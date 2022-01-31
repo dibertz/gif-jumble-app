@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Requirements Specification:
+1. NODE.JS for REACT APP Framework (Command use: npx create-react-app myapp)
+2. GIPHY API Account Developer
+3. TailwindCSS
+
 ## Available Scripts
 
 In the project directory, you can run:
